@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="Economics Concept Explorer", page_icon="📈", layout="wide")
 
 # -----------------------------
-# Mini Knowledge Base
+# Expanded Knowledge Base (20 Concepts)
 # -----------------------------
 ECON_CONCEPTS = {
     "opportunity cost": {
@@ -293,7 +293,8 @@ ECON_CONCEPTS = {
     },
 }
 
-
+# Quick topics for buttons
+QUICK_TOPICS = ["opportunity cost", "inflation", "quantitative easing", "aggregate demand"]
 
 # -----------------------------
 # Helper Function
@@ -314,7 +315,6 @@ def find_concept(query: str):
             return data
 
     return None
-
 
 # -----------------------------
 # UI Layout
